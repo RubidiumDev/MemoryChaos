@@ -1,0 +1,176 @@
+body {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid #e0e0e0;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  border: 2px solid #666;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #2a2a2a;
+}
+
+h2 {
+  font-size: 2em;
+  border-bottom: 2px dashed #e0e0e0;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #c0c0c0;
+}
+
+.button {
+  display: inline-block;
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #777;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-top: 4px solid #e0e0e0;
+}
+
+/* Style for the media section */
+#media {
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  border: 2px solid #666;
+  border-radius: 8px;
+  width: 300px; /* Adjust size as needed */
+  height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Style for the download section (now play section) */
+#download {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.button {
+  display: inline-block;
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #777;
+  transform: scale(1.05);
+}
+
+.button:active {
+  background-color: #333;
+  transform: scale(0.95);
+}
+
+/* Modal Background */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
